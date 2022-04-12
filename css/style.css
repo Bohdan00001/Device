@@ -8,6 +8,7 @@ body {
 }
 
 .container-wide {
+    position: relative;
     width: 1160px;
     margin: 0 auto;
 }
@@ -16,6 +17,17 @@ body {
     position: absolute;
     top: -20px;
     left: 120px;
+}
+
+.search {
+    border: none;
+    background-color: transparent;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: "OpenSans";
+    color: rgba(0, 0, 0, 0.302);
+    line-height: 2;
+    text-align: left;
 }
 
 .header__numb {
@@ -122,8 +134,13 @@ body {
     justify-content: space-between;
 }
 
-.dropdown-menu {
+.menu-link--hidden {
     display: none;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 150px;
     width: 100%;
     height: 200px;
     background-color: #f7e296;

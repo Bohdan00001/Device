@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'Gilroy - Extra Bold';
+    src: url(/fonts/gilroy/Gilroyextrabold.ttf) format('ttf'), url(/fonts/web/gilroyextrabold.woff) format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(/fonts/gilroy/Gilroylight.ttf) format('ttf'), url(/fonts/web/gilroylight.woff) format('woff');
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans - Light';
+    src: url(/fonts/open_sans/OpenSans-Light.ttf) format('ttf'), url(/fonts/web/opensanslight.woff) format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans - regular';
+    src: url(/fonts/open_sans/OpenSans-Regular.ttf) format('ttf'), url(/fonts/web/opensans.woff) format('woff');
+    font-weight: 300;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -19,6 +44,16 @@ body {
     left: 120px;
 }
 
+.logo:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.logo:active {
+    content: '';
+    opacity: 0.6;
+}
+
 .search {
     border: none;
     background-color: transparent;
@@ -30,9 +65,29 @@ body {
     text-align: left;
 }
 
+.open:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.open:active {
+    content: '';
+    opacity: 0.6;
+}
+
+.compare:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.compare:active {
+    content: '';
+    opacity: 0.6;
+}
+
 .header__numb {
     font-size: 36px;
-    font-family: "Gilroy";
+    font-family: "Gilroy - Extra Bold";
     color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1;
@@ -41,8 +96,7 @@ body {
     -webkit-transform: matrix( 5.0080154443811, 0, 0, 5.00801544438112, 0, 0);
     -ms-transform: matrix( 5.0080154443811, 0, 0, 5.00801544438112, 0, 0);
     position: absolute;
-    left: 954px;
-    top: 197px;
+    left: 960px;
     z-index: 144;
 }
 
@@ -65,12 +119,27 @@ body {
     padding-left: 41px;
 }
 
+.cart:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.cart:active {
+    content: '';
+    opacity: 0.6;
+}
+
 .header__menu {
     position: relative;
     margin-top: 40px;
     width: 1160px;
     height: 299px;
     background-color: #f7e296;
+}
+
+.plus {
+    padding-left: 16px;
+    opacity: 0.3;
 }
 
 .row-nav {
@@ -90,6 +159,16 @@ body {
     line-height: 1.333;
 }
 
+.catalog:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.catalog:active {
+    content: '';
+    opacity: 0.6;
+}
+
 .main-menu--delivery {
     font-size: 18px;
     font-family: "Gilroy";
@@ -98,6 +177,16 @@ body {
     line-height: 1.333;
     text-align: left;
     padding-right: 80px;
+}
+
+.main-menu--delivery:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.main-menu--delivery:active {
+    content: '';
+    opacity: 0.6;
 }
 
 .main-menu--warranty {
@@ -110,6 +199,16 @@ body {
     padding-right: 120px;
 }
 
+.main-menu--warranty:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.main-menu--warranty:active {
+    content: '';
+    opacity: 0.6;
+}
+
 .main-menu--contacts {
     font-size: 18px;
     font-family: "Gilroy";
@@ -117,6 +216,16 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.333;
+}
+
+.main-menu--contacts:hover {
+    content: '';
+    opacity: 0.3;
+}
+
+.main-menu--contacts:active {
+    content: '';
+    opacity: 0.6;
 }
 
 .row-nav li {
@@ -158,6 +267,123 @@ body {
     color: rgb(0, 0, 0);
     line-height: 2.4;
     text-align: left;
+}
+
+.slider {
+    display: flex;
+    margin: 0 auto;
+    width: 962px;
+    height: 486px;
+}
+
+.container-slider {
+    position: relative;
+    top: -100px;
+}
+
+.col-slider-text {
+    margin-left: 125px;
+}
+
+.col-slider-text h1 {
+    margin-top: 70px;
+    width: 394px;
+    height: 98px;
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 47px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+}
+
+.slide-one-text {
+    color: #464646;
+    font-family: 'Open Sans - Light';
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.15px;
+    line-height: normal;
+    margin-bottom: 62px;
+}
+
+.more {
+    position: relative;
+    width: 133px;
+    height: 15px;
+    color: #000000;
+    font-family: "Gilroy - Extra Bold";
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.15px;
+    text-decoration: none;
+}
+
+.more-text {
+    margin-left: 43px;
+}
+
+.more::before {
+    content: '';
+    width: 220px;
+    height: 8px;
+    background-color: #f0c52e;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    top: 7px;
+}
+
+.more-radio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group {
+    padding-top: 6px;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.real-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.custom-radio {
+    position: relative;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+
+.custom-radio::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.real-radio:checked+.custom-radio::before {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 footer {
